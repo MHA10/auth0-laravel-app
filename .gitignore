@@ -1,7 +1,13 @@
 /vendor/
-node_modules/
 npm-debug.log
 yarn-error.log
+/.phpunit.cache
+/node_modules
+/public/build
+auth.json
+/.fleet
+/.idea
+/.vscode
 
 # Laravel 4 specific
 bootstrap/compiled.php
@@ -17,6 +23,8 @@ public_html/hot
 
 storage/*.key
 .env
+.env.backup
+.env.production
 Homestead.yaml
 Homestead.json
 /.vagrant
