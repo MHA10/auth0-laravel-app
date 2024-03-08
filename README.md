@@ -22,6 +22,9 @@ Check if project running successfully:
 
 ## SDK Installation
 Run the following command within your project directory to install the [Auth0 Laravel SDK](https://github.com/auth0/laravel-auth0)
+```
+composer require auth0/login:^7.9 --update-with-all-dependencies
+```
 
 Then generate an SDK configuration file for your application:
 ```
@@ -67,3 +70,5 @@ As these files contain credentials it's important to treat these as sensitive. Y
 ```
 echo ".auth0.*.json" >> .gitignore
 ```
+
+Make sure your APP_URL in .env is correct, it will be defining the callback and other routes for Auth0.
